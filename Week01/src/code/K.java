@@ -12,15 +12,19 @@ public class K {
         int min = 1000;
         int max = 0;
         int sum = 0;
-        int count =0;
-        while(cn.hasNext()){
+        int count = 0;
+        while (cn.hasNext()) {
             int a = cn.nextInt();
-            if(min>a) min = a;
-            if(max<a) max = a;
+            if (min > a) {
+                min = a;
+            }
+            if (max < a) {
+                max = a;
+            }
             sum += a;
             count++;
         }
-        System.out.print(min+" "+max+" ");
-        System.out.printf(String.format("%.3f\n",1.0*sum/count));
+        System.out.print(min + " " + max + " ");
+        System.out.printf(String.format("%.3f\n", 1.0 * sum / count));
     }
 }

@@ -16,13 +16,11 @@ public class E {
         min = Math.min(min, c);
         int max = Math.max(a, b);
         max = Math.max(max, c);
-        int mid = a+b+c-min-max;
-        if(min*min+mid*mid==max*max){
+        int mid = a + b + c - min - max;
+        if (min * min + mid * mid == max * max) {
             System.out.println("yes");
-        }
-        else if(min+mid>max) {
+        } else if (min + mid > max) {
             System.out.println("no");
-        }
-        else System.out.println("not a triangle");
+        } else System.out.println("not a triangle");
     }
 }

@@ -15,7 +15,9 @@ public class L {
         boolean[] light = new boolean[n];
         for (int i = 1; i <= k; i++) {
             for (int j = 0; j < n; j++) {
-                if ((j + 1) % i == 0) light[j] = !light[j];
+                if ((j + 1) % i == 0) {
+                    light[j] = !light[j];
+                }
             }
         }
         for (int i = 0; i < light.length; i++) {

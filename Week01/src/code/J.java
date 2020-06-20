@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class J {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
-        while(cin.hasNext()) {
+        while (cin.hasNext()) {
             int n = cin.nextInt();
             int sum = 0;
             if (n > 24) {
@@ -21,6 +21,7 @@ public class J {
             System.out.println(l(sum));
         }
     }
+
     private static int u(int a) {
         int rst = 1;
         for (int i = 2; i <= a; i++) {
@@ -28,6 +29,7 @@ public class J {
         }
         return rst;
     }
+
     private static int l(int a) {
         return a % 1000000;
     }
